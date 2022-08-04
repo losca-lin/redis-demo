@@ -3,3 +3,12 @@ logging:
     io.lettuce.core: debug
   pattern:
     dateformat: MM-dd HH:mm:ss:SS
+
+spring:
+  redis:
+    sentinel:
+      master: mymaster
+      nodes:
+        - 192.168.142.150:27001
+        - 192.168.142.150:27002
+        - 192.168.142.150:27003
